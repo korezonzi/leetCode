@@ -1,17 +1,19 @@
-import scala.collection.View.Empty
-
 object _01_TwoSum {
-  def main(args: Array[Int]): Unit = {
-    println(twoSum(Array(3, 2, 4), 6))
+  def main(args: Array[String]): Unit = {
+    println(twoSum(Array(2, 3, 3), 6))
   }
 
   def twoSum(nums: Array[Int], target: Int): Array[Int] = {
-    var result: Array[Int] = Array.empty
-    var num = 0
-    for (num <- nums) {
-      val res = target - num
-      result = nums.filter(_ == res) :+ num
+    val optArr = nums.combinations(2).find(_.sum == target)
+    optArr match {
+      case Some(arr) =>
+      {
+        //arr: 答えの数字の配列
+        //数字が重複: 先頭からと後方から検索
+        val res1:Int = nums.indexOf(arr(0))
+        val res2:Int = nums.lastIndexOf(arr(1))
+        Array(res1, res2)
+      }
     }
-    result
   }
 }
