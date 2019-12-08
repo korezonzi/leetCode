@@ -1,6 +1,9 @@
 object _0009_PalindromeNumber {
   def main(args: Array[String]): Unit = {
     println(isPalindrome(252))
+    println(isPalindrome(-252))
+    println(isPalindrome(-250))
+    println(isPalindrome(250))
   }
 
   def isPalindrome(x: Int): Boolean = {

@@ -1,6 +1,6 @@
 object _1281_SubtractTheProductAndSumOfDigitsOfAnInteger {
   def main(args: Array[String]): Unit = {
-    println(subtractProductAndSum(123))
+    println(subtractProductAndSum(1234))
     println(subtractProductAndSum(1))
     println(subtractProductAndSum(120))
   }
