@@ -1,4 +1,4 @@
-object _771_JewelsAndStones {
+object _0771_JewelsAndStones {
   def main(args: Array[String]): Unit = {
     println((numJewelsInStones(("aA"),("aaAbbzon"))))
   }

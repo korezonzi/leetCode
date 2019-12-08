@@ -1,4 +1,4 @@
-object _09_PalindromeNumber {
+object _0009_PalindromeNumber {
   def main(args: Array[String]): Unit = {
     println(isPalindrome(252))
   }

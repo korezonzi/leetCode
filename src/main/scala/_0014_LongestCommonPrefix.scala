@@ -1,4 +1,4 @@
-object _14_LongestCommonPrefix {
+object _0014_LongestCommonPrefix {
   /*def main(args: Array[String]): Unit = {
     println(longestCommonPrefix(Array("flower", "flow", "flight")))
   }*/

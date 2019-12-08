@@ -1,4 +1,4 @@
-object _07_ReverseInteger {
+object _0007_ReverseInteger {
    def main(args: Array[String]): Unit = {
     println(reverse(1499309429))
   }

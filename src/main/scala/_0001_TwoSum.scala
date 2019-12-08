@@ -1,4 +1,4 @@
-object _01_TwoSum {
+object _0001_TwoSum {
   def main(args: Array[String]): Unit = {
     println(twoSum(Array(2, 3, 3), 6))
   }
