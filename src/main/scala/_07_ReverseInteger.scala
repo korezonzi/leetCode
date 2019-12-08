@@ -1,17 +1,24 @@
 object _07_ReverseInteger {
    def main(args: Array[String]): Unit = {
-    println(reverse(-12049490))
+    println(reverse(1499309429))
   }
+
+  def isRange(x: Int): Boolean = {
+    x <=  2147483647 || x >= -2147483648
+  }
+
   def reverse(x: Int): Int = {
-    val numList =
-      if(x == 0 ) 0
+    val numList: String =
+      //Stringに合わせるため
+      if(x == 0 ) 0.toString
       else{ x.toString.toList  match {
-        case y if((y.endsWith(("0")) && (y.startsWith("-")))) => ("-" +: y.init.drop((1)).reverse).mkString("").toInt
-        case zero if((zero.endsWith("0")))   => zero.init.reverse.mkString("").toInt
-        case minus if(minus.startsWith("-")) => ("-" +: minus.drop(1).reverse).mkString("").toInt
-        case x => x.reverse.mkString("").toInt
+        case y     if(y.endsWith(("0")) && y.startsWith("-")) => ("-" +: y.init.drop((1)).reverse).mkString("")
+        case zero  if((zero.endsWith("0")))                   => zero.init.reverse.mkString("")
+        case minus if(minus.startsWith("-"))                  => ("-" +: minus.drop(1).reverse).mkString("")
+        case x                                                => x.reverse.mkString("")
       }
     }
-    numList
+    if(isRange(numList.toInt)) numList.toInt
+    else 0
   }
 }
