@@ -17,3 +17,5 @@ object _0001_TwoSum {
     }
   }
 }
+
+//引き算, Map[num, index], Mapをループする(Some(n）, None)
