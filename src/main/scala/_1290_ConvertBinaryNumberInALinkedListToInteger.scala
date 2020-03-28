@@ -12,7 +12,7 @@ object _1290_ConvertBinaryNumberInALinkedListToInteger {
   }
 
   def main(args: Array[String]): Unit = {
-    println(_1290_ConvertBinaryNumberInALinkedListToInteger(ListNode(1,0,1)))
+    //println(_1290_ConvertBinaryNumberInALinkedListToInteger(ListNode(1,0,1)))
   }
 
   def getDecimalValue(head: ListNode): Int = {
