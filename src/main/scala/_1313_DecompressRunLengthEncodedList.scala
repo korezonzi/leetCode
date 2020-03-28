@@ -9,8 +9,8 @@ object _1313_DecompressRunLengthEncodedList {
 
   def decompressRLElist(nums: Array[Int]): Array[Int] = {
     val seqTuple = nums.grouped(2).toSeq
-    var result = Seq.empty
-    val padtoSeq = for{seq <- seqTuple}yield result.padTo(seq.head.toInt,seq.last.toInt)
+    val result = Seq.empty
+    val padtoSeq = for{seq <- seqTuple}yield result.padTo(seq.head,seq.last)
     padtoSeq.flatten.toArray
   }
 }
