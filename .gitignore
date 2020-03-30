@@ -99,3 +99,5 @@ fabric.properties
 build.sbt
 project/build.properties
 src/test/
+/.idea/
+/src/main/scala/test.sc
